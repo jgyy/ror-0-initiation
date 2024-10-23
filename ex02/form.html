@@ -1,0 +1,65 @@
+<!-- python3 -m http.server 8080 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <form id="contactForm">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label>
+                <input type="checkbox" id="student" name="student">
+                Student at 42?
+            </label>
+        </div>
+        
+        <div>
+            <label>Gender:</label>
+            <label>
+                <input type="radio" id="gender_male" name="gender" value="Male">
+                Male
+            </label>
+            <label>
+                <input type="radio" id="gender_female" name="gender" value="Female">
+                Female
+            </label>
+            <label>
+                <input type="radio" id="gender_other" name="gender" value="Other">
+                Other
+            </label>
+        </div>
+        
+        <div>
+            <button type="button" onclick="displayFormContents()">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
