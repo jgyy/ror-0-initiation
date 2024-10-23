@@ -1,171 +1,168 @@
-# Training Piscine PHP Symfony - 0 Initiation
+# Training Ruby on Rails - 0 Initiation
 
-**Summary:** This first project will introduce you to the basics of web development. On the menu: HTTP, HTML, CSS and the integration of existing scripts in the language Javascript.
+**Summary:** This first day will allow you to familiarize with the basics of web development. Here's what's on the menu: HTTP, HTML, CSS and integration of Javascript scripts existing in your pages.
 
 **Version:** 1
 
 ## Contents
-- I Foreword
-- II General rules
-- III Day-specific rules
-- IV Exercise 00
-- V Exercise 01
-- VI Exercise 02
-- VII Exercise 03
-- VIII Exercise 04
-- IX Exercise 05
-- X Submission and peer-evaluation
+1. Preamble
+2. General Rules
+3. Exercise 00
+4. Exercise 01
+5. Exercise 02
+6. Exercise 03
+7. Exercise 04
+8. Exercise 05
+9. Submission and Peer-evaluation
 
-## Chapter I: Foreword
+## Chapter I: Preamble
 
-This is what wikipedia told us about Balaenoptera Musculus:
+Here is what Wikipedia has to say about Balaenoptera musculus:
 
-The blue whale (Balaenoptera musculus) is a marine mammal belonging to the baleen whales (Mysticeti). At up to 30 metres (98 ft) in length and with a maximum recorded weight of 173 tonnes (190 short tons) and probably reaching over 181 tonnes (200 short tons), it is the largest animal known to have ever existed.
+The blue whale (Balaenoptera musculus) is a marine mammal belonging to the baleen whale suborder Mysticeti. Reaching a maximum confirmed length of 29.9 meters (98 feet) and weight of 177 tonnes (190 tons), it is the largest animal known to have ever existed.
 
-Long and slender, the blue whale's body can be various shades of bluish-grey dorsally and somewhat lighter underneath. There are at least three distinct subspecies: B. m. musculus of the North Atlantic and North Pacific, B. m. intermedia of the Southern Ocean and B. m. brevicauda (also known as the pygmy blue whale) found in the Indian Ocean and South Pacific Ocean. B. m. indica, found in the Indian Ocean, may be another subspecies. As with other baleen whales, its diet consists almost exclusively of small crustaceans known as krill.
+There are currently five subspecies of blue whale, recognized by the Society for Marine Mammalogy's Committee on Taxonomy:
+- B. m. musculus in the North Atlantic and North Pacific
+- B. m. intermedia in the Southern Ocean
+- B. m. brevicauda (the pygmy blue whale) in the Indian Ocean and South Pacific Ocean
+- B. m. indica in the Northern Indian Ocean
+- B. m. unnamed subsp. in the waters off Chile
 
-Blue whales were abundant in nearly all the oceans on Earth until the beginning of the twentieth century. For over a century, they were hunted almost to extinction by whalers until protected by the international community in 1966. A 2002 report estimated there were 5,000 to 12,000 blue whales worldwide, in at least five groups. The IUCN estimates that there are probably between 10,000 and 25,000 blue whales worldwide today.[10] Before whaling, the largest population was in the Antarctic, numbering approximately 239,000 (range 202,000 to 311,000).
+The blue whale diet consists almost exclusively of euphausiids (krill).
 
-*No whale was hurt during this subject writing.*
+Blue whales were abundant in nearly all the oceans on Earth until the end of the 19th century. They were hunted almost to extinction by whaling until the International Whaling Commission banned all hunting of blue whales in 1967. The International Whaling Commission catch database estimates that 382,595 blue whales were caught between 1868 and 1978. The global blue whale population abundance is estimated to be 10,000-25,000 blue whales, roughly 3-11% of the population size estimated in 1911. There remain only much smaller concentrations in the Eastern North Pacific (1,647), Central North Pacific (63-133), North Atlantic (1000-2,000), Antarctic (2,280), New Zealand (718), Northern Indian Ocean (270), and Chile (570-760). It is considered an endangered species.
 
-## Chapter II: General rules
+*No whale was harmed during the writing of this subject.*
 
-* Your project must be realized in a virtual machine.
-* Your virtual machine must have all the necessary software to complete your project. These softwares must be configured and installed.
-* You can choose the operating system to use for your virtual machine.
-* You must be able to use your virtual machine from a cluster computer.
-* You must use a shared folder between your virtual machine and your host machine.
-* During your evaluations you will use this folder to share with your repository.
-* Your functions should not quit unexpectedly (segmentation fault, bus error, double free, etc) apart from undefined behaviors. If this happens, your project will be considered non functional and will receive a 0 during the evaluation.
-* We encourage you to create test programs for your project even though this work won't have to be submitted and won't be graded. It will give you a chance to easily test your work and your peers' work. You will find those tests especially useful during your defence.
-* Submit your work to your assigned git repository. Only the work in the git repository will be graded. If Deepthought is assigned to grade your work, it will be done after your peer-evaluations. If an error happens in any section of your work during Deepthought's grading, the evaluation will stop.
+## Chapter II: General Rules
 
-## Chapter III: Day-specific rules
+- Your project must be realized in a virtual machine.
+- Your virtual machine must have all the necessary software to complete your project. These softwares must be configured and installed.
+- You can choose the operating system to use for your virtual machine.
+- You must be able to use your virtual machine from a cluster computer.
+- You must use a shared folder between your virtual machine and your host machine.
+- During your evaluations you will use this folder to share with your repository.
+- Your functions should not quit unexpectedly (segmentation fault, bus error, double free, etc) apart from undefined behaviors. If this happens, your project will be considered non functional and will receive a 0 during the evaluation.
+- We encourage you to create test programs for your project even though this work won't have to be submitted and won't be graded. It will give you a chance to easily test your work and your peers' work. You will find those tests especially useful during your defence.
+- Submit your work to your assigned git repository. Only the work in the git repository will be graded. If Deepthought is assigned to grade your work, it will be done after your peer-evaluations. If an error happens in any section of your work during Deepthought's grading, the evaluation will stop.
 
-If no other explicit information is displayed, you must assume the following versions of languages:
+## Chapter III: Exercise 00
 
-* PHP - Symfony LTS
-* HTML 5
-* CSS 3
-
-## Chapter IV: Exercise 00
-
-### Exercise 00: First shell script
+### Exercise 00: First Shell Script
 
 **Turn-in directory:** ex00/  
 **Files to turn in:** myawesomescript.sh  
 **Allowed functions:** curl, grep, cut
 
-If Twitter has no secrets for you, you'll probably know bit.ly: an useful URL shortener.
+If Twitter has no secret to you, you probably know bit.ly: a very useful URL shortening service.
 
-The purpose of this exercise is to write and return a shell script which displays the real address behind a bit.ly address (understand "The address to which the bit.ly's link refers").
+The goal of this exercise is to write and turn-in a shell script that displays the real address of a supposedly valid bit.ly address (that is, "the address the bit.ly link leads towards).
 
-As explicitly written in the exercise's cartridge, you are allowed to use only the 3 following shell functions: curl, grep and cut. Your best starting point is to read the manual of the curl function. To do this, simply type man curl in your terminal.
+As stated in this exercise header, you can only use the following shell commands: curl, grep and cut. You best bet is to start reading the curl manual. To do so, type man curl in your terminal.
 
-Here is an example of the expected performance of your script:
-
+Here is an example of how your shell script should behave:
 ```bash
 $> ./myawesomescript.sh bit.ly/1O72s3U
-http://42.fr
+http://42.fr/
 $>
 ```
 
-The above example shows clearly that your script must be executable. The interpreter to use is /bin/sh.
+The example above clearly shows your script must be an executable. You must use /bin/sh as an interpreter.
 
-Turn in your script in a file ex00 at the root of your repository.
+Turn-in your script in the ex00 folder at the root of your repo.
 
-## Chapter V: Exercise 01
+## Chapter IV: Exercise 01
 
-### Exercise 01: Your résumé in HTML
+### Exercise 01: Your Resume in HTML
 
 **Turn-in directory:** ex01/  
 **Files to turn in:** cv.html  
 **Allowed functions:** n/a
 
-You must produce a résumé in HTML/css and observe the following rules:
+You will write your resume in HTML/CSS respect the following constraints:
 
-* You must observe the semantic of your HTML beacons and the separation between the background and the shape.
-* You must produce an HTML file coherent in it structure with at least a first name, a last name, skills and experience.
-* You must display at least a title with the beacon title and a title with the beacon h1.
-* You must use at least a table with the beacons table, th, tr and td.
-* You must use at least a list with the beacon ul and a list with the beacon ol. The components must use the beacon li.
-* The table's borders must be visible (solid). The table's borders must be merged (collapse).
-* You must use a different syntactic solution for the two points of the previous instruction: for the first one, use the beacon style in the head of your page. For the second one, use the symbol style in a beacon designed for.
-* The cell at the bottom right of each table must have #424242 as border's color.
+- You must respect the semantics of your HTML tags, as well as the separation between style and content.
+- You must create a consistent HTML file with the minimum required content: name, surname, skills and career path.
+- You must display at least one title with the title tag and a title with the h1 tag.
+- You must use at least one table with the table, th, tr and td tags.
+- You must use at least a list with the ul tag and a list with the ol tag. The elements must use a li tag.
+- The table borders must be visible (solid). The table borders must be merged (collapse).
+- The lowest right cell of a table must have a #424242 border color.
+- You must use a different syntactic solution for each previous instructions: for the first one, use the style tag in the head of your page. For the second, use a style attribute in the tag you see fit.
 
-There is no specific instruction about the truth of informations. You can make a strange résumé if you want.
+*No special instruction about the veracity of informations. You can craft a crazy resume if you like, as long as you follow the instructions above.*
 
-## Chapter VI: Exercise 02
+## Chapter V: Exercise 02
 
-### Exercise 02: E-mail sending form
+### Exercise 02: Email Sending Form
 
 **Turn-in directory:** ex02/  
 **Files to turn in:** form.html  
 **Allowed functions:** n/a
 
-You must produce a form in HTML which represent the usual data of any contact form. This form must dispose every of the following fields:
+Create a HTML form that represents the usual informations of any contact. This form will show the following fields:
 
-* Firstname: a text field.
-* Name: also a text field.
-* Age: you must use the HTML5 specific numeric field.
-* Phone: you must use the HTML5 specific phone field.
-* Email: you must use the HTML5 specific email field.
-* Student at 42?: you must use the checkbox field.
-* Gender: you must use radio buttons with Male, Female and Other values.
-* A form submission button. The OnClick symbol of your button must be 'displayFormContents()'
+- Firstname: a text field
+- Name: a text field, also
+- Age: you must use the specific numeric field specific to the HTML5
+- Phone: you must use the tel field specific to the HTML5
+- Email: you must use the email field specific to the HTML5
+- Student at 42?: you must use the checkbox field
+- Gender: you must use radio buttons with the values Male, Female and Other
+- A form submission button. The onclick attribute of your button must be: 'displayFormContents'
 
-The d00.tar.gz tarball in annex of this subject contains a subfolder ex02/ which itself contains a JavaScript file popup.js made by your boss's son during your internship. Because it would have been unacceptable that you made your boss's son pose as an unqualified in programming, you can't modify any of his code and you must use it as it is.
+The tarball d00.tar.gz in this subject appendix contains a ex02/ sub-folder that contains a Javascript popup.js file written by your boss's son, who's an intern in your company. And since you would not like to have your boss's son feel like an incompetent slob as far as programming goes, you cannot modify his file, which must be used as is.
 
-An attentive reading and a superficial understanding of the JavaScript code provided are required to succeed this exercise.
+*A thorough reading and a superficial understanding of the provided Javascript code are required to complete this exercise.*
 
-## Chapter VII: Exercise 03
+## Chapter VI: Exercise 03
 
-### Exercise 03: Reproduce a webpage
+### Exercise 03: Web Page Replicating
 
 **Turn-in directory:** ex03/  
 **Files to turn in:** copy.html  
 **Allowed functions:** n/a
 
-A Rival company has uploaded a more pretty webpage than your's. Through Hollywood style spying methods, your boss obtained screenshots of the page and the related CSS. Those two files are at your disposal in the annex of this subject contained in the ex03/ subfolder traceable in the d00.tar.gz archive.
+A competing business has uploaded a website that's nicer than yours. Thanks to a serious mission of industrial espionage, your boss gets a screenshot of a page and its css file. You can access both those files in the appendix of this subject in the d00.tar.gz archive and its ex03/ sub-folder.
 
-You must reproduce this page the most accurately possible.
+You must replicate this page as faithfully as possible!
 
-You must again observe a separation between the background and the shape, respect the beacon's semantic used and keep a logical structure in your document.
+Once again, you will have to separate style and content, respect the tags' semantics you will use and keep the structure logical in your document.
 
-You must use the css file provided without editing it.
+You must use the provided css file without modifying it. A "fresh" version of the css will be used during the evaluation in order to check whether you have followed this instruction.
 
-## Chapter VIII: Exercise 04
+## Chapter VII: Exercise 04
 
-### Exercise 04: Integration of JS's snippets
+### Exercise 04: Snippets JS Integration
 
 **Turn-in directory:** ex04/  
 **Files to turn in:** snippets.html  
 **Allowed functions:** n/a
 
-The d00.tar.gz tarball in annex of this subject contains a ex04/ subfolder which itself contains four files: file1.js, file2.js, file3.js and file4.js.
+The d00.tar.gz tarball in this subject appendix contains a ex04/ sub-folder that contains the same 4 files: file1.js, file2.js, file3.js and file4.js.
 
-You must create and return a snippets.html which must import the four others scripts in such a way that the pop-up displays correctly (no weird character).
+You must create and turn-in a snippets.html file that must import the 4 scripts so that the pop-up appears correctly (meaning no strange characters should show).
 
-You can only import the related scripts, you can't edit them or add JavaScript in your HTML code.
+You cannot import the specified scripts. You cannot modify them. You cannot add Javascript in your HTML code.
 
-## Chapter IX: Exercise 05
+## Chapter VIII: Exercise 05
 
 ### Exercise 05: W3C Validation
 
 **Turn-in directory:** ex05/  
-**Files to turn in:** Your index.html and the assets's files  
+**Files to turn in:** Your edited index.html  
 **Allowed functions:** n/a
 
-Having code is cool, but having beautiful code is better, to have beautiful code the best way is to follow a beautiful norm.
+Code is nice. Nice code is better. And write nice code, you should follow a nice norm. The norme W3C is a staple, and you have to respect its form when writing or generate HTML.
 
-The W3C cannot be round in this sector, you must follow it when you're writing or generating HTML code.
+In the d00.tar.gz tarball located in this subject appendix you will find the ex05/ subfolder. It contains the sources of a complete web page. Unfortunately, it was written by a developer far less skilled than yourself!
 
-You'll find a ex05/ subfolder in the d00.tar.gz tarball which contains the source code of a complete webpage. Unfortunately, this page has been written by an horrible developer!
+Edit the HTML code of the html index file so it can pass the W3C validation! This means neither error nor warning.
 
-Edit the HTML code of the index.html file to pass the W3C validation. This process means that neither error or warnings are allowed.
+Your must edit the file, not truncate it. This means the file's content you will edit must be included in it totality in your repo.
 
-## Chapter X: Submission and peer-evaluation
+## Chapter IX: Submission and Peer-evaluation
 
 Turn in your assignment in your Git repository as usual. Only the work inside your repository will be evaluated during the defense. Don't hesitate to double check the names of your folders and files to ensure they are correct.
 
-**The evaluation process will happen on the computer of the evaluated group.**
+*The evaluation process will happen on the computer of the evaluated group.*
